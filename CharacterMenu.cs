@@ -87,4 +87,10 @@ public class CharacterMenu : MonoBehaviour
             xpText.text = currXpIntoLevel.ToString() + " / " + diff;
         }
     }
+
+    public void ReturnToMainMenuButton()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        Debug.Log("Returning to main menu!");
+    }
 }
