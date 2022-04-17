@@ -6,7 +6,7 @@ public class EnemyTextPerson : Collidable
 {
     public string[] message;
     public int textSize;
-    private float coolDown = 4.0f;
+    private float coolDown = Random.Range(4.0f, 8.0f);;
     private float lastShout;
 
     protected override void Start()
