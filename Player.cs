@@ -70,7 +70,8 @@ public class Player : Mover
     {
         Heal(maxHitpoint);
         isAlive = true;
-        immuneTime = Time.time;
+        immuneTime = 1.0f;
         pushDirection = Vector3.zero;
+        GameManager.instance.mainMenuRespawn.SetTrigger("hide");
     }
 }
