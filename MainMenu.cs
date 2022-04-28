@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-
     public void startButton()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Main");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Main", UnityEngine.SceneManagement.LoadSceneMode.Single);
+        GameManager.instance.player.Respawn();
         Debug.Log("Starting game!");
     }
 
