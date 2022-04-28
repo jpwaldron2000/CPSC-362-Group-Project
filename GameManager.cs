@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     public Weapon weapon;
     public FloatingTextManager floatingTextManager;
     public RectTransform hitpointBar;
+    public Animator mainMenuRespawn;
     public Animator deathMenuAnim;
     public GameObject hud;
     public GameObject menu;
